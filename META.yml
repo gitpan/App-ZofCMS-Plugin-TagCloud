@@ -1,0 +1,23 @@
+---
+name: App-ZofCMS-Plugin-TagCloud
+version: 0.0101
+author:
+  - "Zoffix <'zoffix@cpan.org'>"
+abstract: generate "tag clouds"
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  App::ZofCMS: 0.0105
+  HTML::Template: 2.9
+  List::Util: 1.19
+build_requires:
+  Test::More: 0
+provides:
+  App::ZofCMS::Plugin::TagCloud:
+    file: lib/App/ZofCMS/Plugin/TagCloud.pm
+    version: 0.0101
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
