@@ -3,7 +3,7 @@ package App::ZofCMS::Plugin::TagCloud;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0103';
 
 use HTML::Template;
 use List::Util qw/shuffle/;
@@ -210,6 +210,7 @@ by the plugin.
 
     id => 'tag_cloud_container',
 
+B<Optional>.
 The C<id> key takes a string as a value. This sting will be used for the C<id=""> attribute
 of the tag cloud C<< <ul> >> element. B<Defaults to:> C<zofcms_tag_cloud>
 
@@ -217,6 +218,7 @@ of the tag cloud C<< <ul> >> element. B<Defaults to:> C<zofcms_tag_cloud>
 
     class => 'tag_cloud_tag',
 
+B<Optional>.
 The C<class> key takes a string as a value. This sting will be used to generate class names
 for cloud tags. B<Defaults to:> C<zofcms_tag_cloud>
 
@@ -224,6 +226,7 @@ for cloud tags. B<Defaults to:> C<zofcms_tag_cloud>
 
     unit => 'em',
 
+B<Optional>.
 The C<unit> key takes a string as a value. This string must be a valid CSS unit for
 C<font-size> property. Whatever you pass in here will be directly used in the generated
 CSS code and the number for that unit will be taken from the "weight" of the cloud tag
@@ -233,6 +236,7 @@ CSS code and the number for that unit will be taken from the "weight" of the clo
 
     shuffle => 1,
 
+B<Optional>.
 Takes either true or false value. When set to a true value the elements of your tag cloud
 will be shuffled each and every time. B<Default to:> C<0>
 
@@ -240,6 +244,7 @@ will be shuffled each and every time. B<Default to:> C<0>
 
     uri_prefix  => 'http://site.com/',
 
+B<Optional>.
 The C<uri_prefix> takes a string as a value. This string will be prepended to all of the
 URIs to which your tags are pointing. B<Defaults to:> empty string.
 
@@ -247,6 +252,7 @@ URIs to which your tags are pointing. B<Defaults to:> empty string.
 
     fg => '#00d',
 
+B<Optional>.
 Specifies the color to use for foreground on C<< <a href=""> >> elements;
 will be directly used for C<color> property in 
 generated CSS code. B<Defaults to:> C<#00d>.
@@ -255,6 +261,7 @@ generated CSS code. B<Defaults to:> C<#00d>.
 
     bg => 'transparent',
 
+B<Optional>.
 Specifies the color to use for background on C<< <a href=""> >> elements;
 will be directly used for C<background> property in
 generated CSS code. B<Defaults to:> C<transparent>.
@@ -263,12 +270,14 @@ generated CSS code. B<Defaults to:> C<transparent>.
 
     fg_hover => '#66f',
 
+B<Optional>.
 Same as C<fg> except this one is used for C<:hover> pseudo-selector. B<Defaults to:> C<#66f>
 
 =head2 C<bg_hover>
 
     bg_hover => 'transparent',
 
+B<Optional>.
 Same as C<bg> except this one is used for C<:hover> pseudo-selector. B<Defaults to:>
 C<transparent>
 
@@ -276,10 +285,12 @@ C<transparent>
 
     fg_visited  => '#333',
 
+B<Optional>.
 Same as C<fg> except this one is used for C<:visited> pseudo-selector. B<Defaults to:> C<#333>
 
 =head2 C<bg_visited>
 
+B<Optional>.
 Same as C<bg> except this one is used for C<:visited> pseudo-selector. B<Defaults to:>
 C<transparent>
 

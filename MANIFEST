@@ -3,6 +3,8 @@ Changes
 MANIFEST
 README
 lib/App/ZofCMS/Plugin/TagCloud.pm
+examples/index.tmpl
+t/01-plugin.t
 t/00-load.t
 t/pod-coverage.t
 t/pod.t

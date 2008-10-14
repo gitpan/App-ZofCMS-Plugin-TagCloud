@@ -1,0 +1,23 @@
+{
+
+    plugins => [ qw/TagCloud/ ],
+
+    plug_tag_cloud => {
+        id   => 'tag_cloud',
+        class => 'tag_cloud_tag',
+        unit    => 'em',
+        shuffle => 1,
+        uri_prefix => 'http://site.com',
+        fg => '#f00',
+        bg => '#00f',
+        fg_hover => '#FFf',
+        fg_visited => '#000',
+        tags => [ qw(
+                foo /foo 2
+                bar /bar 1
+                ber /ber 3
+            )
+        ],
+    },
+
+}

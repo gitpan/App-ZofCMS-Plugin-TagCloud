@@ -1,6 +1,6 @@
 ---
 name: App-ZofCMS-Plugin-TagCloud
-version: 0.0101
+version: 0.0103
 author:
   - "Zoffix <'zoffix@cpan.org'>"
 abstract: generate "tag clouds"
@@ -16,7 +16,7 @@ build_requires:
 provides:
   App::ZofCMS::Plugin::TagCloud:
     file: lib/App/ZofCMS/Plugin/TagCloud.pm
-    version: 0.0101
+    version: 0.0103
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
