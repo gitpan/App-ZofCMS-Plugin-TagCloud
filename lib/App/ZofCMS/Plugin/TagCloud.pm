@@ -3,10 +3,10 @@ package App::ZofCMS::Plugin::TagCloud;
 use warnings;
 use strict;
 
-our $VERSION = '0.0103';
+our $VERSION = '0.0104';
 
 use HTML::Template;
-use List::Util qw/shuffle/;
+use List::Util (qw/shuffle/);
 
 sub new { bless {}, shift }
 
@@ -114,6 +114,8 @@ END
 
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 

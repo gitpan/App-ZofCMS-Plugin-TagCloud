@@ -17,7 +17,9 @@ my $builder = Module::Build->new(
         'App::ZofCMS'    => 0.0105,
         'HTML::Template' => 2.9,
         'List::Util'     => 1.19,
+        'perl' => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'App-ZofCMS-Plugin-TagCloud-*' ],
     create_makefile_pl => 'traditional',
 );

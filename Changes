@@ -1,11 +1,14 @@
 Revision history for App-ZofCMS-Plugin-TagCloud
 
-0.0103  October 14, 2008
-        Fixed broken manifest and missing example
+0.0104  2013-11-10
+        - Minor fixes to comply with specs and Kwalitee game
 
-0.0102  October 13, 2008
-        Fixed ommitions in documentation
+0.0103  2008-10-14
+        - Fixed broken manifest and missing example
 
-0.0101  October 13, 2008
-        First version, released on an unsuspecting world.
+0.0102  2008-10-13
+        - Fixed ommitions in documentation
+
+0.0101  2008-10-13
+        - First version, released on an unsuspecting world.
 
